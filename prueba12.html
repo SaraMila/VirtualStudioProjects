@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /* Realizar un programa para una tienda de coches. Si el coche a la venta es un Ford Fiesta, el descuento es de un 5%. Si el coche a la venta es un Ford Focus, 
+    el descuento es de un 10%. El usuario introduce la marca y el modelo y el programa saca el descuento correspondiente por pantalla (utiliza el document.write)*/
+
+    var marca, modelo, mar, mod;
+
+    marca= prompt("Dime la marca del coche: ","");
+    modelo= prompt("Dime el modelo del coche: ","");
+
+    mar = marca.toLowerCase();
+    mod = modelo.toLowerCase();
+
+    if(mar === "ford" && mod === "fiesta"){
+        document.write("El descuento es de un 5%");
+    } else if(mar === "ford" && mod === "focus"){
+        document.write("El descuento es de un 10%");
+    }else{
+        document.write("No hay descuento para este coche.")
+    }
+    
+</script>
+</html>

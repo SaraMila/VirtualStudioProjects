@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /*Realiza un programa anidando sentencias if-else dentro de otras, que te lea el precio de un café. Si vale 1 euro que te muestre que es "barato" y salga del bucle, 
+    si el precio es menor de 1.5 que te escriba por pantalla "normal" y sino "caro". el problema se tiene que realizar con 2 bucles if-else */
+
+    var p;
+    var precio = prompt("Dime el precio del café");
+
+    p = parseFloat(precio);
+
+    if(p==1){
+        alert("El precio del café es barato (" +p+"€).");
+    }else if(p>1 && p<=1.5){
+        alert("El precio del café es normal (" +p+"€).");
+    }else{
+        alert("El precio del café es caro (" +p+"€).");
+    }
+
+    
+</script>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    /*Introduce dos números y que te diga cuál es mayor utilizando la función parseInt y document.write*/
+
+    let num1, num2, n1, n2;
+    num1 = window.prompt("Dime el primer número: ", "");
+    num2 = window.prompt("Dime el segundo número: ", "");
+
+    n1 = parseInt(num1);
+    n2 = parseInt(num2);
+
+    if(n1>n2){
+        document.write(`El primer número es ${n1} y el segundo ${n2}. El número mayor es el primero, el ${n1}`);
+    } else if(n2>n1){
+        document.write(`El primer número es ${n1} y el segundo ${n2}. El número mayor es el segundo, el ${n2}`);
+    }else{
+        document.write(`El primer número es ${n1} y el segundo ${n2}. Los números son iguales`);
+    }
+
+     
+</script>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /*Realiza un programa que lea tres notas de un alumno, calcula la media e indica si está suspendido o aprobado (nota media mayor o igual a 5). Usar parseInt.*/
+
+    var nota1, nota2, nota3, n1, n2, n3;
+
+    nota1 = window.prompt("Dime la primera nota: ","");
+    nota2 = window.prompt("Dime la segunda nota: ","");
+    nota3 = window.prompt("Dime la tercera nota: ","");
+
+    n1 = parseInt(nota1);
+    n2 = parseInt(nota2);
+    n3 = parseInt(nota3);
+
+    var media = (n1+n2+n3)/3;
+
+    if(media>=5){
+        alert("El alumno está aprobado con una media de: " + media + ".");
+    }else{
+        alert("El alumno está suspenso con una media de: " + media + ".");
+    }
+
+</script>
+</html>
