@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /*Realiza un programa que no lea por pantalla valores incorrectos. Mientras el valor sea <10 debe leer por pantalla. 
+    Utiliza parseInt y document.write para escribir en la página web todos los valores leídos*/
+
+    var numero;
+
+    var n = prompt("Dime un número: " , "");
+    numero =  parseInt(n);
+    
+    while (numero < 10) {
+        document.write(n + "<br>");
+        n = prompt("Dime otro número: " , "");
+        numero = parseInt(n);
+    }
+
+</script>
+</html>

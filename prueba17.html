@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //Introduce 5 números. Calcular la suma de todos ellos. Decir cuántos de ellos son mayores de 100.
+
+    var suma = 0;
+    var cont = 0;
+    
+    for (let i = 1; i <= 5; i++) {
+
+        var n = prompt("Dime un número: ", "");
+        var numero = parseInt(n);
+        suma = suma + numero;
+        document.write("Número introducido: " + n + " <br/>");
+        if (n>100) {
+            document.write("El numero " + n + " es mayor que 100.<br/>")
+            cont++;
+        }
+    }
+
+    alert("La suma de los 5 números es: " + suma + ". Hay " + cont + " números mayores que 100.");
+</script>
+</html>

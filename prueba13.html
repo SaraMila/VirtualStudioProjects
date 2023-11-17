@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //Realiza un programa que utilizando la sentencia switch-case que te lea un valor del semáforo,
+    // en caso de verde que muestre por consola "adelante", rojo "stop" y ambar "precaución"
+
+    var color= prompt("Dime el color del semáforo (verde, rojo o ambar): ","");
+    var c = color.toLocaleLowerCase();
+
+    switch (c) {
+        case "verde":
+            alert("adelante")
+            break;
+
+        case "rojo":
+            alert("stop")
+            break;
+
+        case "ambar":
+            alert("precaución")
+            break;    
+
+        default:
+            alert("Valor inválido")
+            break;
+    }
+</script>
+</html>
