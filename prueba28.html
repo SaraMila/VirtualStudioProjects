@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /*La sintaxis de javascript nos permite indicar un valor por defecto al mismo tiempo que definimos el parámetro. ¿Qué valores tiene la función?*/
+
+var cinco = 5;
+
+function sumarDos(numero1, numero2 = 6) {
+    var res = numero1 + numero2;
+    console.log("La suma es " + res);
+}
+
+function sumarDosB(numero1 = 6, numero2 = 6) {
+    var res = numero1 + numero2;
+    console.log("La suma es " + res);
+}
+
+sumarDos(2); //8
+sumarDos(4,5); //9
+sumarDos(); //NaN
+
+sumarDosB(2); //8
+sumarDosB(4,5); //9
+sumarDosB(); //12
+</script>
+</html>
