@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /*Introducir un mes y decir a que estación pertenece:*/
+
+    let mes = prompt("Dime un mes: ");
+
+    let m = mes.toLocaleLowerCase();
+
+   
+    switch (m) {
+
+        case "diciembre":
+        case "febrero":
+        case "enero":
+                alert("Invierno");
+            break;
+
+        case "marzo":
+        case "abril":
+        case "mayo":
+                alert("Primavera");
+            break; 
+
+        case "junio":
+        case "julio": 
+        case "agosto":
+                alert("Verano");
+            break;
+
+        case "septiembre":
+        case "octubre":
+        case "noviembre":
+                alert("Otoño");
+            break;
+    
+        default:
+            alert("El valor introducido no es un mes del año")
+            break;
+    }
+    
+    
+</script>
+</html>

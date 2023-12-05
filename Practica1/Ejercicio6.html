@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /*Introducir una cadena. Decir la longitud de la cadena. Pasarla a mayúsculas y a
+minúsculas. Después al revés. */
+
+let cadena =prompt("Dime una cadena de texto: ");
+
+document.write("La longitud de la cadena es: " + cadena.length +"</br>");
+document.write("La cadena en mayúsculas es así: "+cadena.toLocaleUpperCase()+"</br>");
+document.write("La cadena en minúsculas es así: "+cadena.toLocaleLowerCase()+"</br>");
+
+
+function reverseString(cadena) {
+    var splitString = cadena.split("");
+    var reverseArray = splitString.reverse();
+    var joinArray = reverseArray.join("");
+    return joinArray;
+}
+
+document.write("La cadena al revés es así: "+reverseString(cadena)+"</br>");
+
+
+</script>
+</html>
