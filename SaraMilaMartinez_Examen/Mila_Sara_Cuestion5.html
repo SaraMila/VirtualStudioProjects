@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /*
+    Realiza un programa que calcule el precio de la estancia en un camping. Leerá por
+    consola el número de personas y días. La tarifa estándar es de 15 €/noche, pero si son
+    más de 5 personas y se quedan al menos una semana el precio se reduce un 25%.
+    */
+
+    let personas = parseInt(prompt("Dime cuantas personas se quedan en el camping ",""));
+    let dias = parseInt(prompt("Dime cuantos días se quedan en el camping ",""));
+
+    const precio = 15;
+
+    if (personas < 5) {
+        
+        let precioTotalDia = personas*precio;
+
+        let precioTotal = precioTotalDia*dias;
+
+        alert("El precio total es de: " + precioTotal);
+    }else{
+
+        let precioTotalDia = personas*precio;
+
+        let precioTotal = precioTotalDia*dias;
+
+        precioTotal = precioTotal - (precioTotal * 25 / 100);
+
+        alert("El precio total es de: " + precioTotal);
+
+    }
+
+
+</script>
+</html>

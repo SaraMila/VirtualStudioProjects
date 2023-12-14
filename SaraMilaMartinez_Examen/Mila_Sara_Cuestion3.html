@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /*
+    Crea un array con 4 strings, que te lea por pantalla una cadena y que te diga true si
+    está, mostrándolo por consola
+    */
+
+    let cadenas = ["hola","adios","gato","perro"];
+
+    let cad = prompt("Dime una cadena de texto: ","");
+
+    let comprobacion = false;
+
+    for (let index = 0; index < cadenas.length; index++) {
+        
+        if (cadenas[index] === cad) {
+           
+            comprobacion = true;
+            console.log(comprobacion);
+        }else{
+            console.log(comprobacion);
+        }
+    }
+
+</script>
+</html>

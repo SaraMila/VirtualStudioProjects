@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /*
+    Realizar programa en el que el usuario introduce el número del mes (1 al 12) y el
+    código responde si ese mes Ɵene 30 o 31 días en la página web, solo pueda permiƟr
+    números del 1 al 12
+    */
+
+    let mes = parseInt(prompt("Dime el número del mes ",""));
+
+    switch (mes) {
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+            alert("El mes tiene 30 días");
+            break;
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12:
+            alert("El mes tiene 31 días");
+            break;
+        case 2:
+            alert("El mes tiene 28 días");
+            break;    
+        default:
+            alert("El valor introducido no es válido");
+            break;
+    }
+
+</script>
+</html>
