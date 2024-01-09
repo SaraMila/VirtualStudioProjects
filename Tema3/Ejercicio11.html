@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .my-button {
+            padding: 10px 20px;
+            background-color: #2aaec5;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            }
+
+            .my-button:hover {
+            background-color: #2aaec5;
+            }
+
+            .my-button:active {
+            background-color: #6bc5d4;
+            }
+
+    p{
+            display: inline-block;
+        }    
+    </style>
+</head>
+<body>
+    <div>
+        <p id="pregunta1" >Tengo nombre y apellidos</p><br>
+        <button class="my-button" onclick="mal('pregunta1')">Falso</button>
+        <button class="my-button" onclick="bien('pregunta1')">Verdadero</button><br>
+
+
+        <p id="pregunta2" >Los animales carnívoros se alimentan de frutas</p><br>
+        <button class="my-button" onclick="bien('pregunta2')">Falso</button>
+        <button class="my-button" onclick="mal('pregunta2')">Verdadero</button><br>
+
+        <p id="pregunta3" >El agua es de color rosa</p><br>
+        <button class="my-button" onclick="bien('pregunta3')">Falso</button>
+        <button class="my-button" onclick="mal('pregunta3')">Verdadero</button><br>
+
+        <p id="pregunta4" >La Tierra es redonda</p><br>
+        <button class="my-button" onclick="mal('pregunta4')">Falso</button>
+        <button class="my-button" onclick="bien('pregunta4')">Verdadero</button><br>
+
+        <p id="pregunta5" >El queso es un lácteo</p><br>
+        <button class="my-button" onclick="mal('pregunta5')">Falso</button>
+        <button class="my-button" onclick="bien('pregunta5')">Verdadero</button><br>
+
+        <p id="pregunta6" >Las hormigas son pequeñas</p><br>
+        <button class="my-button" onclick="mal('pregunta6')">Falso</button>
+        <button class="my-button" onclick="bien('pregunta6')">Verdadero</button><br>
+
+        <p id="pregunta7" >2 + 2 = 68</p><br>
+        <button class="my-button" onclick="bien('pregunta7')">Falso</button>
+        <button class="my-button" onclick="mal('pregunta7')">Verdadero</button><br>
+
+
+    </div>
+</body>
+<script>
+    
+    function mal(pregunta) {
+        var uno = document.getElementById(pregunta);
+        uno.style.backgroundColor = '#FF6961';
+    }
+
+    function bien(pregunta) {
+        var uno = document.getElementById(pregunta);
+        uno.style.backgroundColor = '#4CAF50';
+    }
+</script>
+</html>

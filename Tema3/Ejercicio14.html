@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          .my-button {
+            padding: 10px 20px;
+            background-color: #2aaec5;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            }
+
+            .my-button:hover {
+            background-color: #2aaec5;
+            }
+
+            .my-button:active {
+            background-color: #6bc5d4;
+            }
+    </style>
+</head>
+<body>
+    <!--Realiza una página web que al pulsar el botón de aparecer aparezca la imagen, igual con desaparecer-->
+    <img src="imagenes/gato.jpg" id="img"><br>
+
+
+    <button class="my-button" onclick="aparecer()">Aparecer</button>
+    <button class="my-button" onclick="desaparecer()">Desaparecer</button>
+</body>
+<script>
+    
+    function desaparecer() {
+        document.getElementById("img").style.visibility="hidden";
+    }
+
+    function aparecer() {
+        document.getElementById("img").style.visibility="visible";
+    }
+</script>
+</html>
