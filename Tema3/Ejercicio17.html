@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    Crea una página web con un array como muestra la figura 
+
+    Nombre:
+    Estudios:
+    Fecha de nacimiento:
+    DNI:
+    -->
+<p id="datos"> </p>
+    
+</body>
+<script>
+
+let cadena = ["Nombre:","Estudios","Fecha de nacimiento:","DNI:"];
+var contenido = "";
+function verArray(){
+    for (let index = 0; index < cadena.length; index++) {
+
+        contenido = cadena[index] + "</p>"
+    }
+
+    document.getElementById("datos").innerHTML = contenido;
+}
+</script>
+</html>

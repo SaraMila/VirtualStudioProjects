@@ -4,9 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .my-button {
+          padding: 10px 20px;
+          background-color: #2aaec5;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          }
+
+          .my-button:hover {
+          background-color: #2aaec5;
+          }
+
+          .my-button:active {
+          background-color: #6bc5d4;
+          }
+
+         img{
+            height: 570px;
+            width: 600px;
+          }
+  </style>
 </head>
 <body>
     <!--Genera 3 botones para ampliar hasta el doble y disminuirlo hasta la mitad. Si se supera el tamaño máximo debe mostrar por pantalla superado el tamaño máximo
     y si llega al mínimo que muestre por pantalla tamaño mínimo. -->
+
+    <img src="imagenes/gato.jpg" id="img"><br>
+
+
+    <button class="my-button" onclick="funcion('aumentar')">Aumentar</button>
+    <button class="my-button" onclick="funcion('reducir')">Reducir</button>
+    <button class="my-button" onclick="funcion('original')">Original</button>
+
 </body>
+<script>
+    var anchoOg = 600;
+    var altoOg = 570;
+    function funcion(evento, ancho, alto) {
+        var imagen = document.getElementById('img');
+        if (evento === 'aumentar') {
+            if (ancho >= 700 && altoOg >= 670) {
+                alert("Has llegado al tamaño máximo")
+            }else{
+                
+            }
+        }
+    }
+</script>
 </html>
