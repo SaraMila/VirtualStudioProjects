@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Crea dos enlaces en que uno se cargue la página web de google y otro que ejecute un código y no cargue la página web (con evento.preventDefault()) -->
+    <a href="https://www.google.es/"> Google BIEN</a>
+    <a id="mal" href="https://www.google.es/" onclick="mal(event)">Google MAL</a>
+</body>
+<script>
+      function mal(event) {
+
+        event.preventDefault();
+
+        alert('No funciono');
+
+    }
+
+</script>
+</html>

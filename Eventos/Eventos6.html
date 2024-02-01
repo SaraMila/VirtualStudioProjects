@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="texto">Hola Laura jeje</h1>
+</body>
+<script>
+    var fontSize = 16;
+
+    
+
+    function cambiar(event) {
+        event.preventDefault();
+        
+        if (event.deltaY > 0) {
+            fontSize -= 2;
+        } else {
+            fontSize += 2; 
+        }
+
+        document.getElementById('texto').style.fontSize = fontSize + 'px';
+    }
+
+    document.getElementById('texto').onwheel=cambiar;
+
+</script>
+</html>

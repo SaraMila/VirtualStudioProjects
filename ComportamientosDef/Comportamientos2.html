@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Realiza en una JavaScript una página web que cambian el color de un párrafo a azul al pulsar sobre un enlace a google, también habrá que crear otro enlace que
+    cambie el color y no vaya a google -->
+    <a id="dos" href="https://www.google.es/" onclick="bien(event)"> Google BIEN</a>
+    <a id="uno" href="https://www.google.es/" onclick="mal(event)">Google MAL</a>
+</body>
+<script>
+    function mal(event) {
+
+        event.preventDefault();
+
+        var dos = document.getElementById('dos');
+        dos.style.color = '#ADD8E6';
+
+        alert('No funciono');
+    }
+
+    function bien(event) {
+
+        var uno = document.getElementById('uno');
+        uno.style.color = '#ADD8E6';
+    }
+
+</script>
+</html>

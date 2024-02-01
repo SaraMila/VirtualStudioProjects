@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="imagen" src="/Tema3/imagenes/gato.jpg" alt="Imagen" style="width: 300px; height: auto;">
+</body>
+<script>
+    var imageSize = 300;  
+
+    function cambiarTamanio(event) {
+        if (event.key === 'Enter') {
+            imageSize += 50;
+            document.getElementById('imagen').style.width = imageSize + 'px';
+        }
+    }
+
+document.addEventListener('keydown', cambiarTamanio);
+
+</script>
+</html>
