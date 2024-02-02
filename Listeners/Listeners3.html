@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Crea usando la función addEventListeners una página web que tienes un input
+         y quieres ejectutar una función como por ejemplo mostrarlo por consola cuando cambie su valor.
+        <input type="text" id="miinput placeholder="Escribe algo"-->
+
+    <label for="miInput">Escribe algo: </label>
+    <input type="text" id="miInput" placeholder="Escribe algo">
+</body>
+<script>
+    var miInput = document.getElementById('miInput');
+
+    function mostrarValor() {
+        console.log('Valor actual del input:', miInput.value);
+    }
+    
+    miInput.addEventListener('change', mostrarValor);
+</script>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Crea usando la función addEventListeners para vincular un evento con dos funciones en JavaScript,
+    que al pulsar un botón te diga por pantalla Hola mundo y otro botón Hola otra vez-->
+
+    <button id="saludoBtn">Decir Hola Mundo</button>
+    <button id="otroSaludoBtn">Decir Hola Otra Vez</button>
+
+</body>
+
+<script>
+    function saludarHolaMundo() {
+        var saludoBtn = document.getElementById('saludoBtn');
+        alert('Hola Mundo');
+    }
+
+    function saludarHolaOtraVez() {
+        var otroSaludoBtn = document.getElementById('otroSaludoBtn');
+        alert('Hola Otra Vez');
+    }
+    
+
+    saludoBtn.addEventListener('click', saludarHolaMundo);
+    otroSaludoBtn.addEventListener('click', saludarHolaOtraVez);
+</script>
+</html>

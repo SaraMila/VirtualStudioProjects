@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Crea usando la función addEventListeners una página web que en un campo de texto grabe lo escrito en la página web cada vez que vamos escribiendo-->
+    <label for="campoTexto">Escribe algo: </label>
+    <input type="text" id="campoTexto">
+
+    <div id="textoGuardado"></div>
+</body>
+<script>
+    var campoTexto = document.getElementById('campoTexto');
+    var textoGuardado = document.getElementById('textoGuardado');
+
+    function guardarTexto() {
+        var textoActual = campoTexto.value;
+        textoGuardado.textContent = 'Texto guardado: ' + textoActual;
+    }
+
+    campoTexto.addEventListener('input', guardarTexto);
+</script>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Muestra la fecha en la página web-->
+    <h1>Fecha Actual:</h1>
+    <p id="fechaActual"></p>
+</body>
+<script>
+    var fecha = new Date();
+
+    var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    var fechaFormateada = fecha.toLocaleDateString('es-ES', options);
+
+    document.getElementById('fechaActual').textContent = fechaFormateada;
+</script>
+</html>

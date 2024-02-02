@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Muestra en la página web los días laborables de la semana. Con un array en JavaScript-->
+    <h1>Días Laborables de la Semana:</h1>
+    <ul id="diasLaborables"></ul>
+</body>
+<script>
+    var diasLaborables = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes'];
+
+    var ulDiasLaborables = document.getElementById('diasLaborables');
+
+    diasLaborables.forEach(function(dia) {
+        var li = document.createElement('li');
+        li.textContent = dia;
+        ulDiasLaborables.appendChild(li);
+    });
+
+</script>
+</html>

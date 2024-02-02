@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Recorrer el array de los días de la semana -->
+    <h1>Días de la Semana:</h1>
+    <ul id="diasSemana"></ul>
+</body>
+<script>
+    var diasSemana = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes','Sábado','Domingo'];
+
+    var ulDiasSemana = document.getElementById('diasSemana');
+
+    diasSemana.forEach(function(dia) {
+        var li = document.createElement('li');
+        li.textContent = dia;
+        ulDiasSemana.appendChild(li);
+    });
+
+</script>
+</html>
