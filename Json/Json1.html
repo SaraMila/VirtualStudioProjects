@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertir a JSON</title>
+</head>
+<body>
+    <!--Convierte un objeto en javascript en JSON-->
+    <script>
+        var persona = {
+            nombre: "Juan",
+            edad: 30,
+            ciudad: "Castellón",
+            mascotas: 1
+        };
+
+        var jsonPersona = JSON.stringify(persona);
+
+        console.log(jsonPersona);
+    </script>
+</body>
+</html>

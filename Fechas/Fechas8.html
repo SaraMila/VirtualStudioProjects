@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Escribe un programa que muestre un recordatorio al usuario cada cinco segundos. Mientras el usuario pulse aceptar
+    el recordatorio continuará. Cuando el usuario pulse cancelar el recordatorio se anulará.-->
+</body>
+<script>
+    function mostrarRecordatorio() {
+      
+      const horaActual = new Date().toLocaleTimeString();
+      
+      console.log('Sigo ejecutando. Hora actual:', horaActual);
+  
+      const continuar = window.confirm('¿Quieres recibir otro recordatorio en 5 segundos?');
+  
+      if (!continuar) {
+        clearInterval(intervalId);
+        console.log('Recordatorio cancelado.');
+      }
+    }
+  
+    function iniciarRecordatorio() {
+      const intervalId = setInterval(mostrarRecordatorio, 5000);
+  
+      const iniciar = window.confirm('¿Quieres recibir recordatorios cada 5 segundos?');
+  
+      if (!iniciar) {
+        clearInterval(intervalId);
+        console.log('Recordatorio cancelado desde el principio.');
+      }
+    }
+
+    window.onload = iniciarRecordatorio;
+  </script>
+  
+</html>

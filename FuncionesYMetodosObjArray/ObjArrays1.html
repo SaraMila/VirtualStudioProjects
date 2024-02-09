@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números Positivos</title>
+</head>
+<body> <!--Crea un array[13,-5,-9,1,8,2] y devuelve sólo los positivos. Muéstralos en la página web con document.getElementById
+
+    Usa si es necesario:
+    
+    concat()
+    fill()
+    filter()
+    -->
+
+    <h1>Números Positivos</h1>
+    <p id="resultado"></p>
+
+    <script>
+        const numeros = [13, -5, -9, 1, 8, 2];
+
+        const numerosPositivos = numeros.filter(function(numero) {
+            return numero > 0;
+        });
+
+        document.getElementById('resultado').textContent = `Números Positivos: ${numerosPositivos.join(', ')}`;
+    </script>
+</body>
+</html>

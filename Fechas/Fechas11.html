@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secuencia de Imágenes</title>
+</head>
+<body>
+    <img id="imagenCarrusel" src="Gatos/imagen1.jpg" alt="Imagen del carrusel">
+    
+    <script>
+        const intervalId = setInterval(carrusel, 5000);
+        const imagenes = ["imagen1.jpg", "imagen2.jpg", "imagen3.jpg"]; 
+
+        let index = 0;
+
+        function carrusel() {
+            const imagenElement = document.getElementById('imagenCarrusel');
+            imagenElement.src = 'Gatos/' + imagenes[index];
+
+            index = (index + 1) % imagenes.length;
+        }
+    </script>
+</body>
+</html>

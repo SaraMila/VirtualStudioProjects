@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarma</title>
+</head>
+<body>
+    <!--Crea una página web con un botón para encender una alarma de 60 segundos y otro botón para apagarla-->
+
+    <h1>Alarma</h1>
+    <button onclick="encenderAlarma()">Encender Alarma</button>
+    <button onclick="apagarAlarma()">Apagar Alarma</button>
+
+    <script>
+        let alarma;
+
+        function encenderAlarma() {
+
+            alarma = setTimeout(function() {
+                alert("¡Alarma activada!");
+            }, 60000);
+        }
+
+        function apagarAlarma() {
+            
+            clearTimeout(alarma);
+            alert("Alarma apagada.");
+        }
+    </script>
+</body>
+</html>

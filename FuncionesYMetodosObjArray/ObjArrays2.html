@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer Número Natural</title>
+</head>
+<body>
+     <!--Devuelve sólo el primer número natural del array anterior-->
+
+    <h1>Primer Número Natural</h1>
+    <p id="resultado"></p>
+
+    <script>
+        const numeros = [13, -5, -9, 1, 8, 2];
+
+        const primerNumeroNatural = numeros.find(function(numero) {
+            return numero > 0;
+        });
+
+        document.getElementById('resultado').textContent = `Primer Número Natural: ${primerNumeroNatural}`;
+    </script>
+</body>
+</html>

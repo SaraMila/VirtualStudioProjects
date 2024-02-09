@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Realiza una página web con dos mensajes, uno cambiará a los 3 segundos y el otro desaparecerá a los 5 segundos-->
+    <h2 id="texto1">Texto que cambia a los 3 segundos</h2>
+    <h2 id="texto2">Texto que desaparece a los 5 segundos</h2>
+
+    <script>
+        const interval1 = setTimeout(cambia, 3000);
+        const interval2 = setTimeout(desaparece, 5000);
+
+        function cambia() {
+            const texto1 = document.getElementById('texto1');
+            texto1.innerHTML = 'Nuevo texto después de 3 segundos';
+        }
+
+        function desaparece() {
+            const texto2 = document.getElementById('texto2');
+            texto2.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

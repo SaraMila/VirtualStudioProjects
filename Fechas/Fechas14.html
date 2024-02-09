@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuenta Atrás</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        #cuentaAtras {
+            font-size: 2em;
+        }
+
+        #botonIniciar {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!--Crea una cuenta atrás-->
+    
+    <h1>Cuenta Atrás</h1>
+    <div id="cuentaAtras">00:00:00</div>
+    <button id="botonIniciar" onclick="iniciarCuentaAtras()">Iniciar</button>
+
+    <script>
+        let tiempoRestante;
+        let cuentaAtras;
+
+        function actualizarCuentaAtras() {
+            const horas = Math.floor(tiempoRestante / 3600);
+            const minutos = Math.floor((tiempoRestante % 3600) / 60);
+            const segundos = tiempoRestante % 60;
+
+            const formatoHora = 
+                `${horas.toString().padStart(2, '0')}:${minutos.toString().padStart(2, '0')}:${segundos.toString().padStart(2, '0')}`;
+
+            document.getElementById('cuentaAtras').innerText = formatoHora;
+
+            if (tiempoRestante === 0) {
+                detenerCuentaAtras();
+                alert("¡Tiempo agotado!");
+            }
+
+            tiempoRestante--;
+        }
+
+        function iniciarCuentaAtras() {
+            tiempoRestante = prompt("Ingrese la duración en segundos:");
+            
+            if (!tiempoRestante || isNaN(tiempoRestante) || tiempoRestante <= 0) {
+                alert("Por favor, ingrese un valor válido mayor que cero.");
+                return;
+            }
+
+            cuentaAtras = setInterval(actualizarCuentaAtras, 1000);
+        }
+
+        function detenerCuentaAtras() {
+            clearInterval(cuentaAtras);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Milisegundos</title>
+</head>
+<body>
+     <!--Crea una página web con un script que calcule los milisegundos que han pasado desde las 00:00 del 1 de Enero 
+    de 2019 hasta la fecha actual-->
+    <h1>Calculadora de Milisegundos</h1>
+    <p id="resultado"></p>
+
+    <script>
+        const fechaActual = new Date();
+        const fechaReferencia = new Date('2019-01-01T00:00:00Z');
+
+        const diferenciaMilisegundos = fechaActual - fechaReferencia;
+
+        document.getElementById('resultado').textContent = `Han pasado ${diferenciaMilisegundos} milisegundos desde el 1 de enero de 2019 hasta ahora.`;
+    </script>
+</body>
+</html>
