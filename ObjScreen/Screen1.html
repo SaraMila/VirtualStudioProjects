@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información de la Pantalla</title>
+</head>
+<body>
+    <!--Objeto screen
+        Muestra por pantalla la anchura total, altura disponible y la profundidad del color-->
+    <script>
+        const anchuraTotal = screen.width;
+        const alturaDisponible = screen.availHeight;
+        const profundidadColor = screen.colorDepth;
+
+        document.write("<p>Anchura total de la pantalla: " + anchuraTotal + " pixels</p>");
+        document.write("<p>Altura disponible de la pantalla: " + alturaDisponible + " pixels</p>");
+        document.write("<p>Profundidad del color de la pantalla: " + profundidadColor + " bits por píxel</p>");
+    </script>
+</body>
+</html>
