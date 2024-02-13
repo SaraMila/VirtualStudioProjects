@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar Respuesta</title>
+</head>
+<body>
+        <!--Realiza un programa que al clickar un checkbox te diga si la respuesta es correcta o incorrecta (una vez selecciones la checkbox directamente te dice si es correcta o no( sin boton))-->
+
+        <label>
+            <input type="checkbox" id="respuestaCheckbox" onchange="verificarRespuesta()"> ¿La respuesta es correcta?
+        </label>
+    
+        <p id="resultado"></p>
+    
+        <script>
+            function verificarRespuesta() {
+                // Obtén el estado del checkbox
+                var checkbox = document.getElementById('respuestaCheckbox');
+                var respuestaCorrecta = checkbox.checked;
+    
+                // Muestra un mensaje indicando si la respuesta es correcta o incorrecta
+                var resultadoElement = document.getElementById('resultado');
+                resultadoElement.textContent = respuestaCorrecta ? 'Respuesta Correcta' : 'Respuesta Incorrecta';
+            }
+        </script>
+</body>
+</html>
+
+
+

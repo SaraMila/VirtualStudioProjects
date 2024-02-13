@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Genera un botón que al pulsarlo abra una ventana de ancho 300 y alto 200 y escribe en esa página web se usan las propiedades: height=200 y width=300, 
+    el nombre de la ventana será 'Test'-->
+
+    <button onclick="abrirVentana()">Abrir Ventana</button>
+
+    <script>
+        function abrirVentana() {
+            var nuevaVentana = window.open("","Test","width=300, height=200");
+            nuevaVentana.document.write("<h1>Se usan las propiedades:</h1>");
+            nuevaVentana.document.write("<h1>width=300 y height=200</h1>")
+
+        }
+    </script>
+</body>
+</html>

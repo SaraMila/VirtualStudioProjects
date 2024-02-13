@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Mostrar en pantalla un documento que nos muestre, para cargar la página el objeto location
+
+        Tu navegador es -----
+        Tu navegador no soporta -----
+        La anchura de tu pantalla es -----
+        La altura de tu pantalla es -----
+        La URL completa es: ----
+
+        Botón en el que pone wikipedia
+    
+    (Al hacer click sobre el botón se carga la página de la wikipedia)-->
+
+    <div>
+        <p id="navegador-info"></p>
+        <p id="soporte-info"></p>
+        <p id="anchura-pantalla-info"></p>
+        <p id="altura-pantalla-info"></p>
+        <p id="url-completa-info"></p>
+    </div>
+
+    <button onclick="cargarWikipedia()">Ir a Wikipedia</button>
+
+    <script>
+         window.onload = function () {
+        var navegador = navigator.appName;
+        var soporteNavegador = (window.location) ? 'Soportado' : 'No soportado';
+        var anchuraPantalla = window.screen.width;
+        var alturaPantalla = window.screen.height;
+        var urlCompleta = window.location.href;
+
+        document.getElementById('navegador-info').innerText = 'Tu navegador es: ' + navegador;
+        document.getElementById('soporte-info').innerText = 'Tu navegador ' + soporteNavegador;
+        document.getElementById('anchura-pantalla-info').innerText = 'La anchura de tu pantalla es: ' + anchuraPantalla + ' pixels';
+        document.getElementById('altura-pantalla-info').innerText = 'La altura de tu pantalla es: ' + alturaPantalla + ' pixels';
+        document.getElementById('url-completa-info').innerText = 'La URL completa es: ' + urlCompleta;
+    };
+
+    function cargarWikipedia() {
+            window.location.href = 'https://es.wikipedia.org/';
+        }
+    </script>  
+</body>

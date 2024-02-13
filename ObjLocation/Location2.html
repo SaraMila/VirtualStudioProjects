@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Con location: 
+
+        Realiza un programa sencillo que calcule el area de un circulo (pi*r²), además hay que generar un botón que al tocarlo refresque la página-->
+
+    <h1>Calculadora de Área de Círculo</h1>
+
+    <label for="radio">Ingresa el radio del círculo:</label>
+    <input type="number" id="radio">
+        
+    <p>El área del círculo es: <span id="resultado"></span></p>
+    
+    <button onclick="calcularArea()">Calcular Área</button>
+
+    <button onclick="refrescarPagina()">Refrescar Página</button>
+
+</body>
+<script>
+    function calcularArea() {
+            var radio = document.getElementById('radio').value;
+            var area = Math.PI * Math.pow(radio, 2);
+
+            document.getElementById('resultado').innerText = area.toFixed(2);
+        }
+
+        function refrescarPagina() {
+            location.reload();
+        }
+</script>
+</html>
+

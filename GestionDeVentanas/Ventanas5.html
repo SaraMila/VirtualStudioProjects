@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventana Emergente con Temporizador</title>
+</head>
+<body>
+    <!--Ventana emergente con un temporizador que al acabar se cierre automáticamente-->
+
+    <button onclick="abrirVentanaConTemporizador()">Abrir Ventana con Temporizador</button>
+
+    <script>
+        var ventanaTemporizada;
+        var tiempoRestante = 5; 
+
+        function abrirVentanaConTemporizador() {
+            ventanaTemporizada = window.open('', '_blank', 'width=400,height=300');
+
+            actualizarMensaje();
+
+            var temporizador = setInterval(function () {
+                tiempoRestante--;
+                actualizarMensaje();
+
+                if (tiempoRestante <= 0) {
+                    cerrarVentanaTemporizada();
+                    clearInterval(temporizador);
+                }
+            }, 1000);
+        }
+
+        function cerrarVentanaTemporizada() {
+            if (ventanaTemporizada) {
+                ventanaTemporizada.close();
+            }
+        }
+
+        function actualizarMensaje() {
+            ventanaTemporizada.document.body.innerHTML = "<p>Esta ventana se cerrará en " + tiempoRestante + " segundos.</p>";
+        }
+    </script>
+</body>
+</html>

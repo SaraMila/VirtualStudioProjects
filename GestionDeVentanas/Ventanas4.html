@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Ventana</title>
+</head>
+<body>
+     <!--Crea una web con dos botones que al pulsar abrir se abra la página de google y otro botón que la cierre-->
+    <button onclick="abrirGoogle()">Abrir Google</button>
+
+    <button onclick="cerrarVentana()">Cerrar Google</button>
+
+    <script>
+        var ventanaGoogle; 
+
+        function abrirGoogle() {
+            ventanaGoogle = window.open('https://www.google.com', '_blank', 'width=800,height=600');
+        }
+
+        function cerrarVentana() {
+            if (ventanaGoogle) {
+                ventanaGoogle.close();
+            }
+        }
+    </script>
+</body>
+</html>
