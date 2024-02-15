@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saludo con Nombre</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        button {
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!--Crea una caja de texto para introducir un nombre, con un botón que al pulsarlo te muestre en la página web "Hola, bon día" 
+        con lo que hayas escrito en el campo de texto-->
+    <h1>Saludo con Nombre</h1>
+
+    <label for="nombre">Introduce tu nombre:</label>
+    <input type="text" id="nombre" placeholder="Nombre">
+    <button onclick="mostrarSaludo()">Saludar</button>
+
+    <div id="saludo"></div>
+
+    <script>
+        function mostrarSaludo() {
+            var nombre = document.getElementById("nombre").value;
+            var saludo = "¡Hola, bon día, " + nombre + "!";
+            document.getElementById("saludo").innerHTML = saludo;
+        }
+    </script>
+</body>
+</html>

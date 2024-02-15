@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenida según Edad</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        #mensaje {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+     <!--La misma página que la anterior, pero que te lleve a la página de Marca si eres mayor de edad. Utiliza action y method-->
+    <h1>Bienvenida según Edad</h1>
+
+    <form action="https://www.marca.com" method="get" id="bienvenidaForm">
+        <label for="edad">Introduce tu edad:</label>
+        <input type="text" id="edad" name="edad" placeholder="Edad" onblur="verificarEdad()">
+        <div id="mensaje"></div>
+        <button type="submit">Continuar a Marca</button>
+    </form>
+
+    <script>
+        function verificarEdad() {
+            var edadInput = document.getElementById("edad").value;
+            var edad = parseInt(edadInput);
+
+            var mensajeElement = document.getElementById("mensaje");
+
+            if (!isNaN(edad)) {
+                if (edad >= 18) {
+                    mensajeElement.innerHTML = "¡Bienvenido! Eres mayor de 18 años.";
+                } else {
+                    mensajeElement.innerHTML = "Lo siento, no eres mayor de 18 años. No puedes acceder.";
+                }
+            } else {
+                mensajeElement.innerHTML = "Por favor, introduce una edad válida.";
+            }
+        }
+    </script>
+</body>
+</html>

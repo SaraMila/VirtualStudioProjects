@@ -8,23 +8,27 @@
 <body>
         <!--Realiza un programa que al clickar un checkbox te diga si la respuesta es correcta o incorrecta (una vez selecciones la checkbox directamente te dice si es correcta o no( sin boton))-->
 
-        <label>
-            <input type="checkbox" id="respuestaCheckbox" onchange="verificarRespuesta()"> ¿La respuesta es correcta?
-        </label>
-    
-        <p id="resultado"></p>
-    
-        <script>
-            function verificarRespuesta() {
-                // Obtén el estado del checkbox
-                var checkbox = document.getElementById('respuestaCheckbox');
-                var respuestaCorrecta = checkbox.checked;
-    
-                // Muestra un mensaje indicando si la respuesta es correcta o incorrecta
-                var resultadoElement = document.getElementById('resultado');
-                resultadoElement.textContent = respuestaCorrecta ? 'Respuesta Correcta' : 'Respuesta Incorrecta';
+     <h2>Responde a la pregunta</h2>
+     <p>¿La Tierra es redonda?</p>
+     <input type="checkbox" id="opcionCorrecta" onchange="verificarRespuesta()">
+     <label for="opcionCorrecta">Correcto</label>
+     <input type="checkbox" id="opcionIncorrecta" onchange="verificarRespuesta()">
+     <label for="opcionIncorrecta">Incorrecto</label>
+
+     <script>
+        function verificarRespuesta() {
+            const checkboxCorrecto = document.getElementById('opcionCorrecta');
+            const checkboxIncorrecto = document.getElementById('opcionIncorrecta');
+
+            if (checkboxCorrecto.checked) {
+                alert('Correcto, la Tierra es redonda')
             }
-        </script>
+
+            if (checkboxIncorrecto.checked) {
+                alert('Incorrecto, la Tierra es redonda')
+            }
+        }
+     </script>
 </body>
 </html>
 

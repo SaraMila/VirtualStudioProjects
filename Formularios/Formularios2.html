@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar Contraseña</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!--Genera en javascript una página web que te verifique una contraseña (que la repita dos veces y coincidan)-->
+
+    <h1>Verificar Contraseña</h1>
+
+    <form id="passwordForm">
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" required>
+        <br>
+        <label for="confirmPassword">Confirmar Contraseña:</label>
+        <input type="password" id="confirmPassword" required>
+        <br>
+        <button type="button" onclick="verificarContraseña()">Verificar</button>
+        <p id="resultado"></p>
+    </form>
+
+    <script>
+        function verificarContraseña() {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+
+            if (password === confirmPassword) {
+                document.getElementById("resultado").innerHTML = "¡Las contraseñas coinciden!";
+            } else {
+                document.getElementById("resultado").innerHTML = "Las contraseñas no coinciden. Inténtalo de nuevo.";
+            }
+        }
+    </script>
+</body>
+</html>
