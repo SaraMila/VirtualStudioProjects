@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <!--
+        1.- Construir un formulario con los campos que ves en la imagen (Los pondré continuación:). 
+        
+        FORMULARIO
+
+        Nombre:
+        Apellidos:
+        Telefono:
+        Dni:
+        Edad:
+        Sexo: (radiobutton) hombre o mujer
+        Incluir mi foto: (Se puede adjuntar un archivo)
+        Enviar publicidad (check)
+        Elige tu afición favorita (select entre diferentes opciones)
+
+        Observaciones: (se puede escribir en un campo de texto)
+
+        Botones de: Guardar cambios y Borrar los datos introducidos
+        
+        Tener en cuenta lo siguiente:
+
+        - Al cargarse el formulario establecer el foco en el cuadro de texto nombre.
+        - Incluir mi foto, permitirá cargar una imagen.
+        - El campo aficiones será un cuadro de lista que nos permitirá elegir entre los siguientes
+        valores: música, lectura y deporte. Al elegir una opción (evento onchange) nos mostrará un
+        alert con los siguientes datos: longitud de la lista, número del índice seleccionado y el valor
+        del índice. Ejemplo: Si seleccionamos lectura en la lista, nos debe aparecer:
+        - La longitud de la lista es 3 El índice seleccionado es el 1 El valor del índice
+        seleccionado es lectura
+        - El campo observaciones (textarea) debe estar limitado a un tamaño de 15 caracteres.
+        - Los botones “Guardar Cambios” y “Borrar datos introducidos” permitirán enviar el formulario
+        y borrar todos los datos (resetear el formulario).
+        - Al enviar el formulario, debemos validar los siguientes campos:
+        -El campo Dni debe ser un campo obligatorio.
+        -El campo Teléfono debe estar formado por nueve dígitos consecutivos y sin
+        espacios ni guiones entre las cifras.
+    -->
+
+    <h1>FORMULARIO</h1>
+
+    <form id="miFormulario" onsubmit="return validarFormulario()" onreset="limpiarFormulario()">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required autofocus>
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" required>
+
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" name="dni" required>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required>
+
+        <label>Sexo:</label>
+        <input type="radio" id="hombre" name="sexo" value="hombre" required>
+        <label for="hombre">Hombre</label>
+        <input type="radio" id="mujer" name="sexo" value="mujer" required>
+        <label for="mujer">Mujer</label>
+
+        <label for="foto">Incluir mi foto:</label>
+        <input type="file" id="foto" name="foto">
+
+        <label>
+            <input type="checkbox" id="publicidad" name="publicidad">
+            Enviar publicidad
+        </label>
+
+        <label for="aficiones">Elige tu afición favorita:</label>
+        <select id="aficiones" name="aficiones" onchange="mostrarInfoAficion()">
+            <option value="musica">Música</option>
+            <option value="lectura">Lectura</option>
+            <option value="deporte">Deporte</option>
+        </select>
+
+        <label for="observaciones">Observaciones:</label>
+        <textarea id="observaciones" name="observaciones" maxlength="15"></textarea>
+
+        <button type="submit">Guardar Cambios</button>
+        <button type="reset">Borrar datos introducidos</button>
+    </form>
+
+    <script>
+        function validarFormulario() {
+            var dniInput = document.getElementById("dni").value.trim();
+
+            if (dniInput === "") {
+                alert("El campo DNI es obligatorio.");
+                return false;
+            }
+
+            var telefonoInput = document.getElementById("telefono").value.trim();
+
+            if (!/^\d{9}$/.test(telefonoInput)) {
+                alert("El campo Teléfono debe contener nueve dígitos consecutivos sin espacios ni guiones.");
+                return false;
+            }
+
+            return true;
+        }
+
+        function limpiarFormulario() {
+            // Puedes agregar cualquier lógica adicional para limpiar campos si es necesario
+            // En este ejemplo, el formulario se resetea completamente
+        }
+
+        function mostrarInfoAficion() {
+            var selectAficiones = document.getElementById("aficiones");
+            var selectedOption = selectAficiones.options[selectAficiones.selectedIndex];
+            
+            alert("La longitud de la lista es " + selectAficiones.length +
+                "\nEl índice seleccionado es el " + selectedOption.index +
+                "\nEl valor del índice seleccionado es " + selectedOption.value);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        input, label {
+            margin: 10px;
+        }
+
+        button {
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+     <!--Crea un formulario con tres campos,para nombre, apellidos y NIF/NIE y sus correspondientes
+    etiquetas. Los tres campos deben ser obligatorios. Debes usar una lógica antes del envío, si el NIF o NIE es
+    correcto. Si es número no es correcto, se mostrará un mensaje mediante un alert, si es correcto se enviará,
+    los campos de nombre deben ser obligatorios.-->
+
+    <h1>Formulario</h1>
+
+    <form onsubmit="return validarNIF()" action="procesar.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required>
+
+        <label for="nif">NIF/NIE:</label>
+        <input type="text" id="nif" name="nif" required>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        function validarNIF() {
+            var nifInput = document.getElementById("nif").value.trim();
+
+            if (!/^[XYZ\d]\d{7}[TRWAGMYFPDXBNJZSQVHLCKE]$/i.test(nifInput)) {
+                alert("El NIF/NIE no es válido. Por favor, introduce un NIF o NIE válido.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>

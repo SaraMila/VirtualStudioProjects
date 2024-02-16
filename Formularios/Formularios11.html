@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        button {
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+     <!--Desarrolla una página web interactiva que actúe como una calculadora de fórmulas matemáticas, permitiendo al usuario ingresar
+    una expresion matemática en un campo de texto, evaluarla al hacer click en un botón y mostrar el resultado en otro campo de texto-->lculadora de Fórmulas Matemáticas</h1>
+    <h1>Calculadora de Fórmulas Matemáticas</h1>
+    
+    <label for="formula">Ingrese la fórmula:</label>
+    <input type="text" id="formula" placeholder="Ejemplo: 2 + 3 * (5 - 2)">
+    <button onclick="calcularResultado()">Calcular</button>
+    <button onclick="limpiarCampos()">Reset</button>
+
+    <label for="resultado">Resultado:</label>
+    <input type="text" id="resultado" readonly>
+
+    <script>
+        function calcularResultado() {
+            var formulaInput = document.getElementById("formula").value;
+            var resultadoElement = document.getElementById("resultado");
+
+            try {
+                var resultado = eval(formulaInput);
+                resultadoElement.value = resultado;
+            } catch (error) {
+                resultadoElement.value = "Error en la expresión";
+            }
+        }
+
+        function limpiarCampos() {
+            document.getElementById("formula").value = "";
+            document.getElementById("resultado").value = "";
+        }
+    </script>
+</body>
+</html>
+

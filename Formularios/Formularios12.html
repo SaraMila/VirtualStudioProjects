@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Peso</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        button {
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!--Crear un programa, en una página web, donde el usuario introduce su altura (cm), 
+    edad, sexo y peso actual, debe aparecer un boton de calcular y otro de reset. El programa responde
+    con una referencia de peso aproximado. 
+
+    Formula: 50 + ((Altura-150)/4)*3+((edad-20)/4)*0'9  (si es hombre no se multiplica por 0'9) -->
+    
+    <h1>Calculadora de Peso Aproximado</h1>
+
+    <label for="altura">Altura (cm):</label>
+    <input type="number" id="altura" placeholder="Altura" required>
+
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" placeholder="Edad" required>
+
+    <label for="sexo">Sexo:</label>
+    <select id="sexo">
+        <option value="hombre">Hombre</option>
+        <option value="mujer">Mujer</option>
+    </select>
+
+    <label for="peso">Peso Actual (kg):</label>
+    <input type="number" id="peso" placeholder="Peso" required>
+
+    <button onclick="calcularPeso()">Calcular</button>
+    <button onclick="limpiarCampos()">Reset</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function calcularPeso() {
+            var altura = parseFloat(document.getElementById("altura").value);
+            var edad = parseFloat(document.getElementById("edad").value);
+            var sexo = document.getElementById("sexo").value;
+            var peso = parseFloat(document.getElementById("peso").value);
+
+            if (isNaN(altura) || isNaN(edad) || isNaN(peso)) {
+                alert("Por favor, ingresa valores válidos para altura, edad y peso.");
+                return;
+            }
+
+            
+            if (sexo === "mujer") {
+                var referenciaPeso = 50 + ((altura - 150) / 4) * 3 + ((edad - 20) / 4) * 0.9;
+            }else{
+                var referenciaPeso = 50 + ((altura - 150) / 4) * 3 + ((edad - 20) / 4);
+            }
+
+
+            document.getElementById("resultado").innerText = "Tu peso aproximado debería ser: " + referenciaPeso.toFixed(2) + " kg";
+        }
+
+        function limpiarCampos() {
+            document.getElementById("altura").value = "";
+            document.getElementById("edad").value = "";
+            document.getElementById("sexo").value = "hombre";
+            document.getElementById("peso").value = "";
+            document.getElementById("resultado").innerText = "";
+        }
+    </script>
+</body>
+</html>

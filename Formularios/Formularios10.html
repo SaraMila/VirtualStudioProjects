@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Determinar Especie</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!--Realiza una página web con un campo de texto que al introducir un campo, or ejemplo humano y abandones el campo te diga eres un humano, 
+        planta eres un vegetal, animal eres un animal, en caso de ninguno de estos decir especie desconocida-->
+
+    <h1>Determinar Especie</h1>
+
+    <label for="especie">Introduce una especie:</label>
+    <input type="text" id="especie" placeholder="Especie" onblur="determinarEspecie()">
+
+    <div id="mensaje"></div>
+
+    <script>
+        function determinarEspecie() {
+            var especieInput = document.getElementById("especie").value.toLowerCase();
+            var mensajeElement = document.getElementById("mensaje");
+
+            if (especieInput === "humano") {
+                mensajeElement.innerHTML = "Eres un humano.";
+            } else if (especieInput === "planta") {
+                mensajeElement.innerHTML = "Eres un vegetal.";
+            } else if (especieInput === "animal") {
+                mensajeElement.innerHTML = "Eres un animal.";
+            } else {
+                mensajeElement.innerHTML = "Especie desconocida.";
+            }
+        }
+    </script>
+</body>
+</html>
