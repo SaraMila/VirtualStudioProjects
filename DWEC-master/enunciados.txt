@@ -1,0 +1,414 @@
+INTRODUCCION
+prueba 1: Pide tu nombre y muestralo por pantalla
+
+prueba 2: Genera una declaracion explicita con valor y muestrala en la pantalla. Genera una declaracion explicita multiple dandole valor a ellas
+
+prueba 3: Declaración de la misma variable dos veces
+
+prueba 4: Calcula el area del circulo con let, var o const
+
+prueba 5: Diferencia entre e y E
+
+prueba 6: Escribe el numero 10 en base 8 y en base 16 y sumalo
+
+prueba 7: Realiza un ordinograma que implemente el siguiente algoritmo: se lee una cara de undado (de 1 a 6),muestra que no es un número correcto si el número es mayor a 6 o menor que 1 y si el número es válido escribe por pantalla la cara opuesta del dado
+
+prueba 8: Realiza el ejercicio anterior sabiendo que las caras contrarias suman 7
+
+prueba 9: Lee dos numeros en javascript, que muestre por pantalla los números leído. Después muestra el número mayor
+
+prueba 10: Declara una variable tipo cadena
+
+prueba 11: Muestra el valor por consola de un texto
+
+prueba 12: Utliza los caracteres especiales utilizando el console.log \n, \", \\, \t, \r y comprueba su resultado
+
+prueba 13: Realiza un programa que calcule el área de un cilindro leyendo los parametros de radio es 5m y la altura 10m
+
+prueba 14: Comprueba con console.log todos los valores que puede tomar una variable, p.e. undefined, Null, Numerico, infinito, -infinito
+
+prueba 15: Declara una variable que lea por pantalla y muestre su valor con incermento y decremento
+
+prueba 16: Declara una variable que te muestre su valor del resto
+
+prueba 17: parseInt(valor) y document.wirte(valor)
+
+prueba 18: Introduce 2 números y que te diga cual es mayor utilizando la función parseInt y document.write
+
+prueba 19: Muestra el resultado de sumar, restar, multiplicar y dividir utilizando operadores abreviados
+
+prueba 20: Crea una variable booleana utilizando =, crea otra variable e invierte su valor utilizando el operador NO
+
+prueba 21: Comprueba por pantalla este operador AND con F/F,F/T,T/T
+
+prueba 22: Di los valores de z
+
+prueba 23: Realiza la programación con una clase que muestre por pantalla las siguientes operaciones y sus resultados
+
+prueba 24: Realiza un prigrama que muestre por console.log si es mayor de edad o no
+
+prueba 25: Realiza un programa anidando sentencias if-else dentro de otras, que te lea el precio de un café. Si vale 1 euro que te muestre que es barato y salga del bucle, si el precio es menor de 1.5 que te escriba por pantalla "normal" y sino "caro". El problema se tiene que realizar con 2 bucles if-else
+
+prueba 26: Realiza un programa que lea tres notas de un alumno, calcula la media e indica si está suspendido o aprobado, (nota media mayor o igual a 5). Usar parseInt.
+
+prueba 27: Si el coche a la venta es un Ford Fiesta, el descuento es de un 5%. Si el coche a la venta es un Ford Focus, el descuento es del 10%. El usuario introduce la marca y el modelo y el programa saca el descuento correspondiente por pantalla (utiliza document.write)
+
+prueba 28: Realiza un programa que utilizando la sentencia switch-case que te lea un valor del semáforo, en caso de verde que muestre por consola "adelante", rojo "stop" y ambar "precaución"
+
+prueba 29: Prueba este código y comprueba su funcionamiento (while y do-while)
+
+prueba 30: Realiza un bucle for que te lea un numero menor que 10, y que muestre por pantalla el numero
+
+prueba 31: Realiza un bucle que te lea un numero y te diga si es primo o no
+
+prueba 32: Introduce 5 numeros, calcular la suma de todos ellos. Decir cuantos de ellos son mayores que 100
+
+prueba 33: Realiza un programa que no lea por pantalla valores incorrectos. Mientras que el valor sea <10 debe leer por pantalla. Utiliza parseInt y document.write para escribir en la página web todos los valores leídos
+
+prueba 34: Realizar un programa en el que el usuario introduce el número del mes (1-12) y el código responde si ese mes tiene 30 o 31 días
+
+TEMA 2
+actividad 1: Comprueba estos valores y di el valor de z.
+
+actividad 2: Comprueba el valor de x.
+
+actividad 3: Comprueba el valor de z.
+
+FUNCIONES
+funct 1: Realiza una suma de 2 valores dentro de una función y que te muestre en consola el valor de la suma
+
+funct 2: Asignar una variable a la función y que muestre el valor por consola
+
+funct 3: Prueba este ejemplo de funcion
+
+funct 4: Que ocurre si no le pasamos ningún valor a la variable
+
+funct 5: Prueba este ejemplo de funcion
+
+funct 6: Prueba este ejemplo de funcion
+
+funct 7: Aunque modifiquemos los parametros dentro de la función, su valor no varía. Prueba este ejemplo de funcion
+
+funct 8: Realiza una función con multiples parametros que sume 2 números y los muestre por consola
+
+funct 9: Prueba este ejemplo de funcion
+
+funct 10: Declara una función que calcule lel volumen de un cono declarando 2 variables de radio y altura y te lo muestre por pantalla. La función tiene que devolver el volumen
+
+funct 11: Realiza una función que te encuentre el maximo de 3 enteros y lo muestre por pantalla
+
+funct 12: Prueba este ejemplo de funcion
+
+funct 13: Crea una función que pase de Celsius a Farnheit y lo muestre por consola. Usa el Prompt
+
+funct 14: Haz una función que reciba dos strings y los concatene
+
+funct 15: Haz una función que calcule la potencia de un número dado su base y yexponente
+
+ARRAY:
+array 1: Crea un array con números, strings, de objetos y una matriz 2x2
+
+array 2: Tamaño del array
+
+array 3: Calcula la suma de todos los elementos de un array
+
+array 4: Encontrar el número más grande de un array
+
+array 5: Contar la frecuencia de numeros del array
+
+array 6: Encontrar la media de un array
+
+array 7: Crea un array de strings que te lea por pantalla una cadena y que te diga true si está
+
+OBJETOS
+obj 1: Crea un objeto tipo libro con las siguientes propiedades: titulo, autor, paginas, formato, precio y si está o no publicado
+
+obj 2: Muestra por pantalla el titulo, autor, paginas, formato, precio y si está o no publicado
+
+obj 3: Crea una función leer, invocala y devuelvela por consola
+
+obj 4: Modifica el precio del libro
+
+obj 5: Crea una pagina web con un script que contenga un objeto de la clase persona, la cual tendrá los siguientes atributos: nombre, apellidos, dni, edad, altura, estudios
+
+obj 6: Crea un objeto coche con las propiedades marca, modelo y fecha de matriculación. Luego accede a cada una de las propiedades e imprimelas por consola
+
+obj 7: Modifica el ejercicio anterior y modifica el valkor de fecha a 2023 y el color a rojo, muestralo por consola
+
+obj 8: Borra la propiedad color y muestrala por consola
+
+FUNCIONES MATH
+math 1: Explicación de todas las funciones
+
+math 2: Lee un numero decimal por pantalla y redondealo hacia abajo
+
+math 3: Realiza una funcion con un array de 7 numeros y que te devuelva con document.write el valor maximo
+
+math 4: Realiza un ejercicio que te lea un numero aleatorio del 1 al 10 y que compruebe que el usuario ha introducido el mismo
+
+ACTIVIDADES/BUCLES
+bucles 1: Escribe un programa que muestra por consola todos los números pares entre 1 y 1000
+
+bucles 2: Realiza un programa que lee por consola dos números enteros (A y B). Si B es mayor que A, muestra todos los números impares entre ellos.
+
+bucles 3: Realiza un programa que lea por consola un número entero e indique cuántas cifras tiene. Pista: usa varias divisiones entre 10. 
+
+bucles 4: Lee por teclado varios números enteros positivos hasta recibir un número negativo. El programa mostrará la media de los números (sin tener en cuenta el negativo).
+
+bucles 5: Realiza un programa que permite a un profesor introducir la nota de un número indefinido de alumnos y le indica cuántos suspendidos o aprobados hay.
+
+bucles 6: Haz un programa que pide un número entero por consola y calcula el factorial.
+
+bucles 7: Haz un programa que pida un número entero por consola e indica si es primo o no
+
+bucles 8: Haz un programa que encuentre e imprima por consola los 20 primeros números primos.
+
+bucles 9: Haz un programa que calcule un número aleatorio de la lotería de Navidad (de 0 a 99.999) y después pida al usuario por consola hasta 5 números indicando cada vez si ha ganado la lotería o no
+
+bucles 10: “El número secreto”. Programa un juego en el que se calcula aleatoriamente un número de 1 a 100. El usuario debe adivinarlo. Cada vez que el usuario pone un número el programa le indicará si lo ha acertado, si el número secreto es mayor o si es menor. Termina cuando el usuario acierta el número. 
+
+bucles 11: Haz una calculadora. La calculadora permitirá hacer varias operaciones. Pedirá un número real, pedirá una operación (+, -, *, / o %), pedirá otro número real y mostrará el resultado por consola. A continuación pedirá los datos para una nueva operación. Piensa en un modo para que se pueda salir de la calculadora en cualquier momento.
+
+CONDICIONALES
+condicional 1: Realiza un programa que lea por consola el lado de un cuadrado y mostrará por consola la superficie y el perímetro.
+
+condicional 2: Realiza un programa que lea por consola la base y la altura de un rectángulo y mostrará por consola la superficie y el perímetro
+
+condicional 3: Realiza un programa que lea por consola la base y la altura de un triángulo y mostrará por consola la superficie. 
+
+EXAMEN
+examen 1: Introducir 5 números. Calcular la suma de todos ellos. Decir cuántos de ellos son mayores de 100.
+
+examen 2: Almacena en un array los números 7,8,2,9,10. Calcular la suma de los números mayores de 8
+
+examen 3: Introducir el mes y decir a que estación pertenece
+
+examen 4: Introducir un numero y decir si es par o impares
+
+examen 5: Introducir el precio de un artículo. Calcular el iva y el precio total (con el iva incluido) que debe salir redondeado a dos decimales.
+
+examen 6: Introducir una cadena. Decir la longitud de la cadena. Pasarla a mayúsculas y a minúsculas. Después al revés.
+
+EXAMEN FINAL
+cuestion 1: Realiza un programa que lea 5 notas de un alumno, calcula la media e indica si está suspendido o aprobado (nota media mayor o igual a 5). Que te muestre la nota en una pantalla emergente.
+
+cuestion 2: Realiza un bucle que lea un número y que te diga si es primo o no. Un número primo sólo es divisible por él mismo y por la unidad. Que te muestre el resultado en una pantalla emergente.
+
+cuestion 3: Crea un array con 4 strings, que te lea por pantalla una cadena y que te diga true si está, mostrándolo por consola.
+
+cuestion 4: Crea una página web con un script que contenga un objeto, la cual tendrá los atributos descritos después. El objeto debe crearse dentro del script al igual que el contenido web.
+
+cuestion 5: Realiza un programa que calcule el precio de la estancia en un camping. Leerá por consola el número de personas y días. La tarifa estándar es de 15 €/noche, pero si son más de 5 personas y se quedan al menos una semana el precio se reduce un 25%.
+
+cuestion 6: Realizar programa en el que el usuario introduce el número del mes (1 al 12) y el código responde si ese mes Ɵene 30 o 31 días en la página web, solo pueda permitir números del 1 al 12.
+
+cuestion 7: Haz un programa que calcule un número aleatorio de la lotería de Navidad (de 0 a 100) y después pida al usuario por consola hasta 5 números indicando cada vez si ha ganado la lotería o no.
+
+DOM
+dom 1: Realiza una función en javascript que suma dos numeros creando 2 archivos y ejecutandolos comprobando que la pagina web muestra la suma al cargarse
+
+dom 2: Copia el siguiente código y comprueba el funcionamiento. Modificar contenido.
+
+dom 3: Crea una página web para el registro del Arenal Sound, debe decir que para registrate debes pulsar un botón, después te debe cambiar el texto, decirte que estás registrado y mostratelo en la página web
+
+dom 4: Cambio de imagenes
+
+dom 5: Cambio de videos
+
+dom 6: Elaborar una secuencia de 10 imagenes y al hacer clic se van cambiando las fotos
+
+dom 7: Cambiar el aspecto de la página web, cambiado el color y el tamaño al pulsar
+
+dom 8: Crea una página web con tres botones con el texto azul, verde y rojo. Al pinchar sobre cada botón debe camboiar el fondo de la pgina al color indicado. Utilizaremos el evento onclick.
+
+dom 9: Lo mismo pero el color del texto
+
+dom 10: Lo mismo pero el fondo del texto
+
+dom 11: Realiza un test de 7 preguntas donde cada pregunta tenga 2 botones(verdadero y falso). Dependiendo si el usuario hace click en verdadero o falso el fondo la frase se pone verde(acierto) o roja(error).
+
+dom 12: Diseña una web con 3 botones para que al pulsarlos se genere un mensaje de bienvenida en ruso, español e inglés en la misma página. Se pide que los mensajes tengan un color diferente dependiendo del idioma.
+
+dom 13: Crea una página HTML con un div con el texto “ Bienvenido a esta página de prueba de colores” que aparecerá inicialmente en blanco. La página contendrá tres botones y al pinchar sobre ellos cambiará el fondo del div.
+
+dom 14: Realiza una pagina web que al pulsar el botón de aparcer aparezca la imagen, igual con desaparecer
+
+dom 15: Genera 3 botones para ampliar hasta un cierto tamaño y disminuirlo hasta. Si se supera el tamaño máximo debe mostrar por pantalla superado tamaño máximo y si llega al mínimo que muestre por pantalla tamaño mínimo.
+
+dom 16: Genera una página web con un botón para aumentar o disminuir una imagen.
+
+dom 17: Crea un pagina web con un array como muestra la figura
+
+EVENTOS
+evento 1: Crea una página web que te permita escribir en la página web un texto introducido por teclado
+
+guiada: https://www.youtube.com/watch?v=FbO4rxuowMw
+
+entregable 1: Pon un div, el siguiente: 'Al pasar por encima cambiará de tamaño'. El tamaño inicial es 12, cuando pasemos por encima aumentará a 16 y cuando salgamos volverá al inicial
+
+evento 2: Realiza una página web con un botón, al pulsarlo debe aparecer con un alert 'Hola mundo', pero habrá que asociar el onclick a un document.getElementById();
+
+evento 3: Realiza una pagina web con un botón, al pulsarlo debe aparecer con un texto en azul
+
+evento 4: Realiza una pagina web utilizando eventos. Al pulsar el botón debe aparecer tu nombre con un aviso con tu nombre introducido
+
+act 1: Realiza una pagina web que cambie el color del fondo al pulsar una tecla
+
+act 2: Realiza una pagina web que cambie el tamaño de un elemento al girar la rueda del ratón
+
+act 3: Realiza una pagina web que cambie una fotografia al pulsar enter
+
+COMPORTAMIENTOS DEFECTO
+comp 1: Crea dos enlaces uno que cargue la pagina web de google y otro que ejecute un código y no cargue la pagina web
+
+comp 2: Realiza en un javascript una pagina web que cambia el color de un parrafo a azul al pulsar sobre un enlace de google, también habrá que crear otro enlace que cambie de color y no vaya a google
+
+LISTENERS
+listeners 1: Crea usando la función addEventListeners para vincular un evento con dos funciones en javascript, que al pulsar un botón te diga por pantalla Hola mundo y otro botón Hola otra vez
+
+listeners 2: Crea usando la función addEventListeners una página web que al copiar el texto te muestre por consola, 'has copiado el texto'
+
+listeners 3: Crea usando la funcion addEventListeners una pagina web que tiene un input y quiere ejecutar una funcion como por ejemplo mostrarlo por consola cuando cambie su valor.
+
+listeners 4: Crea usando la función addEventListeners una pagína web que al arrastrar la foto te muestre has arrastado la foto. (entregable)
+
+listeners 5: Crea usando la funcion addEventListeners una pagina web que en un campo de texto grabe lo escrito en la pagina cada vez que vamos escribiendo
+
+FECHAS
+fechas 1: Muestra la fecha en la pagina web
+
+fechas 2: Muestra la hora en formato más convencional
+
+fechas 3: Mejora el código anterior para que muestre la hora con 0
+
+fechas 4: Que muestre la hora en formato 24h
+
+fechas 5: Realiza una pagina web que con innerHTML y utilizando la funcion getHours() te diga buenos días si es de mañana, buenas tardes si es de tarde o buenas noches si es de noche
+
+fechas 6: Realiza un programa que se te muestre la hora por consola y se te repita a los 5 seg.
+
+fechas 7: Realiza un programa que te muestre por consola cada 5seg la hora y lo pare a los 20seg
+
+fechas 8: Escribe un programa que muestre un recordatorio al usuario cada 5seg. Mientras el usuario pulse en aceptar el recordatorio continuará. Cuando el usuario pulse cancelar, el recordatorio se anulará
+
+fechas 9: Crea un reloj en tu pagina web que se actualice cada segundo
+
+fechas 10: Realiza una pagina web que cambie el color del texto cada 2 seg
+
+fechas 11: Realiza una secuencia de imagenes que cambie cada 5 seg
+
+fechas 12: Realiza una pagina web con dos mensajes, uno cambiará a los 3 segundos y el otro deaparecerá a los 5
+
+fechas 13: Basandote en el codigo expuesto, crea tu propio cronometro
+
+fechas 14: Crea una cuenta atrás
+
+fechas 15: Crea una página web con un script que calcule los milisegundos que han pasado desde las 00:00 del 1 de Enero de 2019 hasta la fecha actual.
+
+fechas 16:  Crea una página web con un botón para encender una alarma 60s y otro para pararla.
+
+ARRAYS 2
+arrays 1: Muestra en la pagina web los dias laborales de la semana
+
+arrays 2: Recorrer el array de los dias de la semana
+
+arrays 3: Realiza un script que muestre un rombo en la pagina web
+
+arrays 4: Lo mismo pero siendo solo la forma
+
+arrays 5: Crea un script que tome una serie de palabras ingresadas por el usuario y almacene esas palabras en un array. Posteriormente,manipule ese array para mostrar en una nueva ventana los siguientes datos:
+                - La primera palabra ingresada por el usuario
+                - La ultima palabra ingresada por el usuario
+                - El numero de palabras presentes en el array
+                - Todas las palabras ordenadas alfabeticamente
+
+COOKIES
+cookies 1: Crea un código que establece un valor en el almacenamiento local del navegador con la clave 'usuario' y el valor 'Dimas', luego muestra una alerta con el valor almacenado en la clave 'usuario'
+
+OBJETOS TIPO / ARRAY:
+objarr 1: Crea un array [13,-5,-9,1,8,2] y devuelve solo los positivos. Muestralos en la pagina web con document.getElementById()
+
+objarr 2: Devuelve solo el primer numero natural deol array anterior
+
+OBJETOS TIPO / STRING
+objstr 1: Utilizando las funciones anteriores (var str = "Hola mundo"), que te devuelve 'ola'
+
+objstr 2: Que te devuelva 'HolX mundo'
+
+OBJETOS TIPO / JSON
+objson 1: Convierte un objeto javascript en json y que lo muestre por consola
+
+OBJETOS TIPO / VENTANA
+objven 1: Genera un botón para abrir y cerrar una nueva ventana, escribe en la ventana emergente 'Ventana creada para publicidad'
+
+OBJETOS TIPO / NAVIGATOR
+objnav 1: Comprueba estos objetos Navigator por consola
+
+objnav 2: Comprueba sobre el navegador si está preparada para la ejecución de programas escritos en Java
+
+OBJETOS TIPO / SCREEN
+objscr 1: Muestra por pantalla la altura total, altura disponible, anchura total, anchura disponible y la profundidad del color
+
+OBJETOS TIPO / LOCATION
+objloc1: Mostrar en pantalla un documento que nos muestre lo siguiente:
+
+objloc2: Realiza un programa sencillo que calcule el area de un circulo, ademas hay que generar un botón que al tocarlo refresque la pagina
+
+GESTIÓN DE VENTANAS
+gestvent1: Genera un botón que al pulsarlo abra una ventana de ancho 300 y alto 200 y escribe en esa pagina web que se usan las propiedades: height=200 y width=300, el nombre de la ventana será 'Test'
+
+gestvent2: Un botón de cerrar en la ventana emergente
+
+gestvent3: Crear varias ventanas emergentes
+
+gestvent4: Crea una web con dos botones, que al pulsar uno se abra la pagina de Google y otro botón que te lo cierre
+
+gestvent5: Ventana emergente con un temporizador que al acabar cierre la ventana automaticamente
+
+FORMULARIOS
+form1: Realiza un programa que al clickar un checkbox, te diga si la respuesta es correcta o no
+
+form2: Genera en javascript una pagina web que te verifique una contraseña
+
+form3: Si te acepta la contraseña te debe abrir la pagina web de google
+
+form4: Genera el siguiente formulario
+
+form5: Realiza un desplegable con tres parametros
+
+form6: Crea una caja de texto con un nombre con un botón que al pulsarlo te muestre en la pagina web 'Hola bon dia'
+
+form7: Realiza un campo que al introducir tu edad te diga que eres bienvenido si eres mayor de edad o que no lo eres si eres menor de edad
+
+form8: Realiza un campo que al introducir tu edad te lleve a la pagina de google con action si eres mayor de edad
+
+form9: Crea un formulario interactivo que solicite al usuario  su nombre y le pida confirmación antes de enviar los datos. El formulario debe cumplir los requisitos
+
+form10: Realiza una pagina web con un campo de texto que al introducir un campo, por ejemplo 'humano' y abandones el campo te diga 'eres un humano', planta 'eres un vegetal', animal 'eres un animal' o 'eres una especie desconocida'
+
+form11: Desarrolla una pagina web interactiva que actue como una calculadora de fórmulas matematicas, permitiendo al usuario ingresar una expresión matematica en un campo de texto, evaluarla al hacere click en un botón y mostrar el resultado en otro campo de texto
+
+form12: Crear un programa en una pagina we donde el usuario introduce su altura(cm), edad, sexo y peso actual, debe aparecer un botón de calcular y oreo de reset. El programa responde con una referencia de peso aproximado
+
+form13: Realiza un formulario sencillo en el que el campo nombre no pueda estar vacio, el checkbox deba estar clicado y la fecha y teléfono tienen que ser un valor númerico(todos estos campos te los mostrará con un alert cuando no se cumplan). Una vez pulsado enviar te debe pedir aceptación. Especifica la URL a la que se enviarán los datos del formulario cuando se envíe(procesar.php), se utilizará el método POST, lo que significa que los datos del formulario se enviarán en el cuerpo de la solicitud HTTP.
+
+form14: Crea un formulario con tres campos,para nombre, apellidos y NIF/NIE y sus correspondientes etiquetas. Los tres campos deben ser obligatorios. Debes usar una lógica antes del envío, si el NIF o NIE es correcto. Si es número no es correcto, se mostrará un mensaje mediante un alert, si es correcto se enviará, los campos de nombre deben ser obligatorios.
+
+entregable: formulario para entregar
+
+NODOS DOM
+dom1: Crea una pagina web con 3 textos que cambie el color del tercero cuando se presione un boton
+
+dom2: Crea una pagina web con 3 textos que al pulsar un boton se elimine el primero
+
+dom3: Crea una lista ordenada de 3 elementos, selecciona el elemento central y muestra por consola en nextsibling y el prevoussibling
+
+dom4: Supongamos que tenemos un documento HTML con un elemento div, agrega un parrafo dentro con createElement
+
+dom5: Unsa replaceChild para remplazar el primer texto de 2 textos por uno nuevo en JavaScript al pulsar un botón
+
+dom6: Genera una pagina web con 3 parrafos y un boton para eliminar uno a uno
+
+dom7: Realiza una pagina web que al pulsar sobre ella se vayan creando nodos hijos
+
+entregable: Ejercicio entregable 4

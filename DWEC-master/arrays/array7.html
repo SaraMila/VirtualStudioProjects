@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        /*Crea un array de strings que te lea por pantalla una cadena y que te diga true si está*/
+        
+        var cad = ["hola", "a", "coche", "pedro", "boli", "arbol"];
+        var ask = prompt("Introduce una cadena", "");
+        var c = ask.toLowerCase();
+        var ok = false;
+        for(var i = 0; i < cad.length; i++) {
+            if(cad[i] == c) {
+                ok = true;
+            }
+        }
+        if(ok == true) {
+            console.log("La cadena está en el array");
+        } else {
+            console.log("La cadena no está en el array");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

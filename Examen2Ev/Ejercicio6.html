@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Implementa el código para que muestre la hora en formato 24h,
+    formato 09:05:03 en la página web y que cuente el tiempo cada segundo.-->
+
+    <h2>Ejercicio 6 Reloj</h2>
+
+    <p id="time"></p>
+    
+    <script>
+        function showTime() {
+            var date = new Date();
+            var hours = date.getHours();
+            var minutes = date.getMinutes();
+            var seconds = date.getSeconds();
+            document.getElementById("time").innerHTML = hours + ":" + minutes + ":" + seconds;
+        }
+        setInterval(showTime, 1000);
+    </script>
+</body>
+</html>

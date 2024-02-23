@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        /*.Haz una calculadora. La calculadora permitirá hacer varias operaciones.
+        Pedirá un número real, pedirá una operación (+, -, *, / o %), pedirá otro número real y
+        mostrará el resultado por consola. A continuación pedirá los datos para una nueva
+        operación. Piensa en un modo para que se pueda salir de la calculadora en cualquier
+        momento.*/
+        var x = prompt("Introduce un numero o escribe salir", "");
+        var uno = x.toLowerCase();
+        var x = prompt("Introduce un simbolo o escribe salir", "");
+        var sim = x.toLowerCase();
+        var x = prompt("Introduce otro numero o escribe salir", "");
+        var dos = x.toLowerCase();
+        var salir = "salir";
+        var ok = false;
+        do {
+            if (uno === salir || dos === salir || sim === salir) {
+                ok = true;
+            } else {
+                var a = parseFloat(uno);
+                var b = parseFloat(dos);
+                if (sim === "+") {
+                    alert(a + " + " + b + " = " + (a+b));
+                } else if (sim === "-") {
+                    alert(a + " - " + b + " = " + (a-b));
+                } else if (sim === "*") {
+                    alert(a + " * " + b + " = " + (a*b));
+                } else if (sim === "/") {
+                    alert(a + " / " + b + " = " + (a/b));
+                } else if (sim === "%") {
+                    alert(a + " % " + b + " = " + (a%b));
+                } else {
+                    alert("Algo que has introducido no es válido");
+                }
+            }
+            var x = prompt("Introduce un numero o escribe salir", "");
+            var uno = x.toLowerCase();
+            var x = prompt("Introduce un simbolo o escribe salir", "");
+            var sim = x.toLowerCase();
+            var x = prompt("Introduce otro numero o escribe salir", "");
+            var dos = x.toLowerCase();
+        } while (ok === false);
+        alert("Has salido");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

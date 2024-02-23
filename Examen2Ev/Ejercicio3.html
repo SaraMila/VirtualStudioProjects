@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Realiza una secuencia de 2 imágenes que cambie cada 5 segundos-->
+
+    <h2>Ejercicio 3 Cambio de imágenes</h2>
+
+    <img id="img" src="Gatos/imagen1.jpg" width="280" height="280">
+
+    <script>
+        var images = ["Gatos/imagen2.jpg", "Gatos/imagen1.jpg"];
+        var i = 0;
+        setInterval(function() {
+            document.getElementById("img").src = images[i];
+            i = (i + 1) % images.length;
+        }, 5000);
+    </script>
+</body>
+</html>

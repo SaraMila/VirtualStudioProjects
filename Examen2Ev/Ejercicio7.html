@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Realiza un formulario en el que el campo nombre no pueda estar vacio,
+    el checkbox deba estar clicado, la fecha tiene que ser un número y
+    teléfono tiene que tener un valor de 9 dígitos (todos estos campos
+    te mostarán un alert si se incumplen los requisitos). Una vez pulsado enviar
+    te debe pedir aceptación. Especifica la URL a la que se enviarán los
+    datos del formulario cuando se envíe (procesar.php), se utilizará el
+    método POST-->
+    
+    <style>
+        input {
+            margin-bottom: 10px;
+        }
+    </style>
+
+    <h2>Ejercicio 7 Formulario</h2>
+
+    <form action="procesar.php" method="post">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="phone">Teléfono:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{9}" required>
+        <br>
+        <label for="date">Fecha de nacimiento:</label>
+        <label for="day">Día:</label>
+        <input type="number" id="day" name="day" min="1" max="31" required>
+        <label for="month">Mes:</label>
+        <input type="number" id="month" name="month" min="1" max="12" required>
+        <label for="year">Año:</label>
+        <input type="number" id="year" name="year" min="1900" max="2020" required>
+        <br>
+        <label for="adult">Mayor de 18 años:</label>
+        <input type="checkbox" id="adult" name="adult" required>
+        <br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+    </form>
+
+    <script>
+        var form = document.querySelector("form");
+        form.addEventListener("submit", function(event) {
+            if(!form.checkValidity()) {
+                alert("Rellena todos los campos correctamente");
+                event.preventDefault();
+            } else {
+                if(!confirm("¿Estás seguro de enviar el formulario?")) {
+                    event.preventDefault();
+                }
+            }
+        });
+    </script>    
+</body>
+</html>

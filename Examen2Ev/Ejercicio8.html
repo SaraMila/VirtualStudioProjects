@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Crea un texto en la página web y cuando pases el ratón
+    por encima que desaparezca.-->
+
+    <h2>Ejercicio 8 Texto que desaparece</h2>
+
+    <p id="text" onmouseover="disappear()">Hola, soy el texto que desaparece</p>
+
+    <script>
+        function disappear() {
+            document.getElementById("text").style.display = "none";
+        }
+    </script>
+</body>
+</html>

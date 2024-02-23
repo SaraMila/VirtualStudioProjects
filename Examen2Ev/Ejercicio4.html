@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Genera 3 botones, uni para ampliar un texto hasta el doble, 
+    otro para disminuirlo hasta la mitad un texto y otro para volver al 
+    tamaño inicial. Si se supera el tamaño máximo debe mostrar por patanlla
+    superado tamaño máximo y si llega al mínimo que muestre por pantalla 
+    tamaño mínimo-->
+
+    <h2>Ejercicio 4 Cambio de tamaño de texto</h2>
+
+    <p id="text" style="font-size: 16px;">Hola soy un texto del ejercicio 4</p>
+
+    <button onclick="increaseTextSize()">Aumentar</button>
+    <button onclick="decreaseTextSize()">Disminuir</button>
+    <button onclick="resetTextSize()">Restablecer</button>
+
+    <script>
+        var textSize = 16;
+
+        function increaseTextSize() {
+            textSize *= 2;
+            if(textSize > 64) {
+                alert('Superado tamaño máximo');
+                textSize = 64;
+            }
+            document.getElementById("text").style.fontSize = textSize + "px";
+        }
+
+        function decreaseTextSize() {
+            textSize /= 2;
+            if(textSize < 8) {
+                alert('Tamaño mínimo');
+                textSize = 8;
+            }
+            document.getElementById("text").style.fontSize = textSize + "px";
+        }
+
+        function resetTextSize() {
+            textSize = 16;
+            document.getElementById("text").style.fontSize = textSize + "px";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        /*Contar la frecuencia de numeros del array*/
+        
+        var num = [1, 2, 3, 4, 5, 6, 5, 8, 1, 2, 7, 0];
+
+        
+        function veces(num) {
+            var ask = prompt("Introduce el número que quieres saber las repeticiones", "");
+            var n = 0;
+            for(var i = 0; i < num.length; i++) {
+                if(ask == num[i]) {
+                    n++;
+                }
+            }
+            return n;
+        }
+        console.log(veces(num));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
